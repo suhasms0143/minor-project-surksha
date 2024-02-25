@@ -168,18 +168,18 @@ def emergency(request):
     for j in contacts:
         emails.append(j._meta.get_field("email"))
     name = user.username
-    message = name+" is in emergency situation and need your help immediately!!"
+    message = name+" is in emergency situation and need your help immediately!!" + "\n Location: https://www.google.com/maps?q=12.9242392,77.5013349"
 
     errors = ""
     try:
-        sendSms("8350815015", message)
+        sendSms("6363108413", message)
     except:
-        errors += "Message not send to 8350815015"
+        errors += "Message not send to Suhas"
         pass
     try:
-        sendSms("7696043017", message)
+        sendSms("6363108413", message)
     except:
-        errors += "Message not send to 7696043017"
+        errors += "Message not send to Suhas"
         pass
 
     for c in contacts:
