@@ -76,7 +76,7 @@
               </li>
               <!-- Dropdown Structure -->
               <ul id='dropdown1' class='dropdown-content' style="background-color: #f1f1f1;">
-                <li><a style="color: #000000;" href="/corona_updates" class="tooltipped" data-position="right" data-tooltip="Get Latest Corona Updates">Corona Updates</a></li>
+                
                 <li class="divider" tabindex="-1"></li>
                 <li><a style="color: #000000;" href="/city_map" class="tooltipped" data-position="right" data-tooltip="Search In City Map">Find in city</a></li>
                 <li class="divider" tabindex="-1"></li>
@@ -182,12 +182,12 @@
 
                 window.onload = function() {
 
-                    var centre = new L.LatLng(30.7333, 76.7794);
+                    var centre = new L.LatLng(12.9242015, 77.501314);
                     map=new MapmyIndia.Map('map',{center:centre,zoomControl: true,hybrid:true });
                         /*1.create a MapmyIndia Map by simply calling new MapmyIndia.Map() and passsing it at the minimum div object, all others are optional...
                         2.all leaflet mapping functions can be called simply on the L object
                         3.MapmyIndia may extend and in future modify the customised/forked Leaflet object to enhance mapping functionality for developers, which will be clearly documented in the MapmyIndia API documentation section.*/
-                    var position = new L.LatLng(30.7333, 76.7794);/*The WGS location object*/
+                    var position = new L.LatLng(12.9242015,77.501314);/*The WGS location object*/
                     var mk = new L.Marker(position, {icon: icon, title: title});/*marker with a custom icon */
                     mk.bindPopup(title);
                     map.addLayer(mk);
